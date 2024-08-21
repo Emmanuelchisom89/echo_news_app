@@ -1,0 +1,38 @@
+.advertBottom {
+    padding: 30px 30px 23px 30px;
+    display: flex; // Ensure the advertBottom container is a flexbox
+    justify-content: center; // Center the content horizontally
+    align-items: center; // Center the content vertically
+
+    .offscreenn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        img {
+            max-width: 100%; // Ensure the image does not exceed the container width
+        }
+    }
+
+    .right {
+        a {
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (max-width: 912px) {
+    .advertBottom {
+        padding: 20px; // Adjust padding for smaller screens
+    }
+
+    .offscreenn {
+        width: 90%; // Adjust the container width for smaller screens
+
+        img {
+            width: 100%;
+            height: 80px;
+        }
+    }
+}

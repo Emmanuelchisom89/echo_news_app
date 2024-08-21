@@ -1,0 +1,107 @@
+.navbarTop {
+    background-color: #111;
+    height: 50px;
+
+    .navbarContainer {
+            padding: 12.5px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .left {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+
+                .item {
+                    display: flex;
+                    align-items: center;
+                    color: #777;
+                    cursor: pointer;
+                    transition: 0.5s;
+
+                    &:hover {
+                        color: #fff;
+                    }
+
+                    span {
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .right {
+                position: relative;
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                justify-content: center;
+
+                .item {
+                    display: flex;
+                    align-items: center;
+                    color: #777;
+                    cursor: pointer;
+                    transition: 0.5s;
+                
+                    &:hover {
+                        color: #fff;
+                    }
+                
+                    span {
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                }
+
+                .icons {
+                    display: flex;
+                    color: #777;
+                    gap: 15px;
+                    cursor: pointer;
+                }
+
+                .dropDownMenu {
+                    position: absolute;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0;
+                    margin: 0;
+                    display: flex;
+                    border-bottom: 2px solid #ce0000;
+                    flex-direction: column;
+                    list-style-type: none;
+                    background-color: #fff;
+                    color: #777;
+                    top: 37px;
+                    z-index: 9999;
+
+                    li {
+                        padding: 5px 30px;
+                        transition: 0.5s;
+                        cursor: pointer;
+
+                        a {
+                            font-weight: 500;
+                            color: #777;
+                            text-decoration: none;
+
+                            &:hover {
+                                color: red;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+
+                @media screen and (max-width: 912px) {
+                    .offscreen {
+                        display: none;
+        
+                    }
+                }
+}

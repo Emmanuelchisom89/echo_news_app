@@ -1,0 +1,147 @@
+ .menu {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     padding-left: 0;
+
+     li {
+         display: inline-block;
+         margin: 1em;
+         padding: 0.5em 1em;
+         background: #eee;
+         border-radius: 3em;
+         cursor: pointer;
+         transition: .3s;
+         text-align: center;
+
+         &.inactive {
+             background: #eee;
+         }
+
+         &.active {
+             background: #ccc;
+
+             &:hover {
+                 background: #aeaeae;
+             }
+         }
+
+         &:hover {
+             &.inactive {
+                 background: #ddd;
+             }
+         }
+     }
+ }
+
+ .news-grid {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-gap: 2em;
+     justify-content: center;
+     justify-items: center;
+     max-width: 1100px;
+     margin: 0 auto;
+     padding: 2.5em;
+
+     @media screen and (max-width: 1150px) {
+         grid-template-columns: 1fr 1fr;
+     }
+
+     @media (max-width: 755px) {
+         grid-template-columns: 1fr;
+     }
+
+     @media (max-width: 400px) {
+         padding: 2.5em 1em;
+     }
+ }
+
+ .article {
+     background: #fff;
+     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+     width: 25em;
+     border-radius: 8px;
+     overflow: hidden;
+     text-decoration: none;
+     color: #000;
+     padding-bottom: .5em;
+     transform: .3s;
+     display: flex;
+     flex-direction: column;
+
+     &:hover {
+         box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+
+         .article-image img {
+             transform: translate(-50%, -50%) scale(1.1);
+         }
+     }
+
+     .article-content {
+         padding: .5em 1em;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         align-items: flex-start;
+         gap: 1em;
+         flex-grow: 1;
+     }
+
+     .article-source {
+         display: flex;
+         justify-content: flex-start;
+         align-items: center;
+         gap: .5em;
+
+         p {
+             display: flex;
+             align-items: end;
+         }
+
+         img {
+             width: 25px;
+             height: 25px;
+             object-fit: contain;
+         }
+     }
+
+     .article-image {
+         overflow: hidden;
+         margin-bottom: .5em;
+         position: relative;
+         height: 15em;
+
+         img {
+             position: absolute;
+             top: 50%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+             width: 100%;
+             height: 100%;
+             transition: .7s ease-in-out;
+         }
+     }
+
+     p {
+         line-height: 25px;
+         color: #555;
+     }
+ }
+
+ @media screen and (max-width: 1330px) {
+     html {
+         font-size: 14px;
+     }
+ }
+
+ @media (max-width: 480px) {
+     .menu li {
+         flex: 1 1 1 25%;
+     }
+
+     .article {
+         width: 100%;
+     }
+ }

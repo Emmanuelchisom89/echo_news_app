@@ -1,0 +1,55 @@
+.advertTop {
+    padding: 30px 30px 23px 30px;
+
+    .advertTopContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 1012px) {
+    .ro {
+
+        img {
+            width: 600px;
+        }
+
+    }
+}
+
+@media screen and (max-width: 912px) {
+
+    .ro {
+        
+        img {
+            width: 500px;
+        }
+        
+    }
+    .offscreen {
+        display: none;
+
+    }
+}
+
+@media screen and (max-width: 912px) {
+
+    .advertTop {
+        padding: 15px 30px;
+    }
+
+    .ro {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 568px) {
+   .left {
+
+    img {
+        width: 180px;
+        height: 70px;
+    }
+   }
+}
