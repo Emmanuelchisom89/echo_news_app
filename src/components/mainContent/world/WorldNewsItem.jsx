@@ -5,7 +5,7 @@ const altDescription = 'News is a report of a current event. It is information a
   const basePath = process.env.NODE_ENV === 'production' ? '/echo_news_app/' : '';
 
 
-  const altImage = `${basePath}src/assets/news.jpg`
+  const altImage = `${basePath}images/news.jpg`
 
 const WorldNewsItem = ({title, description, src, url, date, icon, iconName}) => {
   return (
@@ -25,4 +25,3 @@ const WorldNewsItem = ({title, description, src, url, date, icon, iconName}) => 
 }
 
 export default WorldNewsItem
-  

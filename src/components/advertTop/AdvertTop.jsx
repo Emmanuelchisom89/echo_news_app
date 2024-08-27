@@ -10,12 +10,12 @@ const AdvertTop = () => {
           <div className="advertTopContainer">
               <div className="left">
                   <a href="">
-                      <img src={`${basePath}src/assets/Echonews.jpg`} alt="USNews Logo" width={227} height={100} />
+                      <img src={`${basePath}images/Echonews.jpg`} alt="USNews Logo" width={227} height={100} />
                   </a>
               </div>
               <div className="right ro">
                   <a href="">
-                    <img src={`${basePath}src/assets/advertttt.gif`} alt="" />
+                    <img src={`${basePath}images/advertttt.gif`} alt="" />
                   </a>
               </div>
           </div>

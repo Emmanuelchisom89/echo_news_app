@@ -7,7 +7,7 @@ const NaijaNewsItem = ({ title, description, src, url, date, icon, iconName }) =
   const basePath = process.env.NODE_ENV === 'production' ? '/echo_news_app/' : '';
 
 
-  const altImg = `${basePath}src/assets/naija.jpg`
+  const altImg = `${basePath}images/naija.jpg`
 
 
   return (

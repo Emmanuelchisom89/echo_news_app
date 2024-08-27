@@ -10,7 +10,7 @@ const AdvertBottom = () => {
       <div className='advertBottom'>
             <div className="offscreenn">
                 <a href="">
-                    <img src={`${basePath}src/assets/advertttt.gif`} alt="" />
+                    <img src={`${basePath}public/images/advertttt.gif`} alt="" />
                 </a>
           </div>      
       </div>

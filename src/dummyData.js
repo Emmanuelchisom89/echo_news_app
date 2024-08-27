@@ -452,19 +452,19 @@ const basePath = process.env.NODE_ENV === "production" ? "/echo_news_app/" : "";
 
 export const gallery = [
   {
-    cover: `${basePath}public/images/gallery/g1.jpg`,
+    cover: `${basePath}images/gallery/g1.jpg`,
   },
   {
-    cover: `${basePath}public/images/gallery/g2.jpg`,
+    cover: `${basePath}images/gallery/g2.jpg`,
   },
   {
-    cover: `${basePath}public/images/gallery/g3.jpg`,
+    cover: `${basePath}images/gallery/g3.jpg`,
   },
   {
-    cover: `${basePath}public/images/gallery/g4.jpg`,
+    cover: `${basePath}images/gallery/g4.jpg`,
   },
   {
-    cover: `${basePath}public/images/gallery/g5.jpg`,
+    cover: `${basePath}images/gallery/g5.jpg`,
   },
 ];
 
