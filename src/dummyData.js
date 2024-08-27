@@ -447,23 +447,27 @@ export const tpost = [
     cover: "../images/tpost/tpost3.jpg",
   },
 ];
+
+const basePath = process.env.NODE_ENV === "production" ? "/echo_news_app/" : "";
+
 export const gallery = [
   {
-    cover: "../images/gallery/g1.jpg",
+    cover: `${basePath}public/images/gallery/g1.jpg`,
   },
   {
-    cover: "../images/gallery/g2.jpg",
+    cover: `${basePath}public/images/gallery/g2.jpg`,
   },
   {
-    cover: "../images/gallery/g3.jpg",
+    cover: `${basePath}public/images/gallery/g3.jpg`,
   },
   {
-    cover: "../images/gallery/g4.jpg",
+    cover: `${basePath}public/images/gallery/g4.jpg`,
   },
   {
-    cover: "../images/gallery/g5.jpg",
+    cover: `${basePath}public/images/gallery/g5.jpg`,
   },
 ];
+
 export const discover = [
   {
     title: "games",

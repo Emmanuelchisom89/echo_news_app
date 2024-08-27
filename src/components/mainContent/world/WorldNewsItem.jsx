@@ -2,7 +2,10 @@ import React from 'react'
 
 const altDescription = 'News is a report of a current event. It is information about something that just happened.'
 
-const altImage = "src/assets/news.jpg"
+  const basePath = process.env.NODE_ENV === 'production' ? '/echo_news_app/' : '';
+
+
+  const altImage = `${basePath}src/assets/news.jpg`
 
 const WorldNewsItem = ({title, description, src, url, date, icon, iconName}) => {
   return (

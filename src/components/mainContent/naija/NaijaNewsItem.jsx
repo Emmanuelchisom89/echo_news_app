@@ -4,7 +4,10 @@ const NaijaNewsItem = ({ title, description, src, url, date, icon, iconName }) =
   
   const altDescription = 'News is a report of a current event. It is information about something that just happened.'
 
-  const altImg = "src/assets/naija.jpg"
+  const basePath = process.env.NODE_ENV === 'production' ? '/echo_news_app/' : '';
+
+
+  const altImg = `${basePath}src/assets/naija.jpg`
 
 
   return (
